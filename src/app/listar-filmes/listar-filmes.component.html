@@ -1,1 +1,13 @@
-<h1>CONTEUDO DA LISTA</h1>
+<div class="row">
+    
+        <div *ngFor="let filme of filmes" class="col-md-3">
+            <div class="card">
+                <img class="card-img-top" src={{filme.poster}} alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{filme.titulo}}</h5>
+                    <p class="card-text"><small class="text-muted">{{filme.ano}}, {{filme.genero}}</small></p>
+                    <a href="javascript:void(0);" class="card-link">Detalhes</a>
+                </div>
+            </div>
+        </div>
+</div>
