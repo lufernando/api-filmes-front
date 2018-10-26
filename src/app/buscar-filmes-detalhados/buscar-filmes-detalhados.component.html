@@ -1,1 +1,115 @@
-<h1>BUSCAR FILMES DETALHADOS</h1>
+<div class="row">
+    <div class="col-md-3">
+  
+      <div class="card">
+        <img class="card-img-top" src="{{ filmesGenericos.poster }}" width="300px" height="447px" alt="Card image cap">
+      </div>
+    </div>
+  
+    <div class="col-md-9">
+      <div class="container">
+        <h1 class="display-4">{{ filmesGenericos.titulo }}</h1>
+        <p class="text-muted lead text-justify">{{ filmesGenericos.sinopse }}</p>
+        <hr class="my-4">
+  
+        <div class="row">
+          <div class="col-md-2 text-right float-left">
+            <span class="lead font-weight-bold">Gênero</span>
+          </div>
+          <div class="col-md-10 float-left">
+            <span class="lead">{{filmesGenericos.genero}}</span>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-md-2 text-right float-left">
+            <span class="lead font-weight-bold">Duração</span>
+          </div>
+          <div class="col-md-10 float-left">
+            <span class="lead">{{filmesGenericos.duracao}}</span>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-md-2 text-right float-left">
+            <span class="lead font-weight-bold">Lançamento</span>
+          </div>
+          <div class="col-md-10 float-left">
+            <span class="lead">{{filmesGenericos.datalancamento}}</span>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-md-2 text-right float-left">
+            <span class="lead font-weight-bold">Idioma</span>
+          </div>
+          <div class="col-md-10 float-left">
+            <span class="lead">{{filmesGenericos.linguagem}}</span>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-md-2 text-right float-left">
+            <span class="lead font-weight-bold">País</span>
+          </div>
+          <div class="col-md-10 float-left">
+            <span class="lead">{{filmesGenericos.pais}}</span>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-md-2 text-right float-left">
+            <span class="lead font-weight-bold">Atores</span>
+          </div>
+          <div class="col-md-10 float-left">
+            <span class="lead">{{filmesGenericos.elenco}}</span>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-md-2 text-right float-left">
+            <span class="lead font-weight-bold">Diretor</span>
+          </div>
+          <div class="col-md-10 float-left">
+            <span class="lead">{{filmesGenericos.diretor}}</span>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-md-2 text-right float-left">
+            <span class="lead font-weight-bold">Produtora</span>
+          </div>
+          <div class="col-md-10 float-left">
+            <span class="lead">{{filmesGenericos.produtora}}</span>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-md-2 text-right float-left">
+            <span class="lead font-weight-bold">Site</span>
+          </div>
+          <div class="col-md-10 float-left">
+            <a href="javascript:void(0)" class="lead" (click)="abrirUrl(filme.Detail.Website)">
+              {{filmesGenericos.site}}
+            </a>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  
+  </div>
+  
+  <hr class="my-4">
+  
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-7">
+      <!--<app-comentario *ngIf="filme.imdbID" [idFilme]="filme.imdbID"></app-comentario>-->
+    </div>
+  </div>
+  
+  <div class="div-fab">
+    <a class="fab fab-btn-large" [routerLink]="['/interno/filmes']">
+      <i class="fa fa-arrow-left" aria-hidden="true"></i>
+    </a>
+  </div>

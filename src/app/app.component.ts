@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { EventEmitterService } from './filmes.emitter';
-import { FilmesGenericos } from './listar-filmes/filmes-genericos';
+import { FilmesGenericos } from './models.ts/filmes-genericos.model';
 
 @Component({
   selector: 'app-root',

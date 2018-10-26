@@ -1,10 +1,10 @@
-export class FilmesDetalhados {
-    
-    public id?: string;
+export class FilmeDetalhado{
+
+    public id?: string ;
 	public titulo?: string;
 	public ano?: string;
 	public classificacao?: string;
-	public dataLancamento?: string;
+	public datalancamento?: string;
 	public duracao?: string;
 	public genero?: string;
 	public diretor?: string;

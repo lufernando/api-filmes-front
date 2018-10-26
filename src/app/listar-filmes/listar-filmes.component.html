@@ -1,12 +1,12 @@
 <div class="row">
     
-        <div *ngFor="let filme of filmes" class="col-md-3">
+        <div *ngFor="let filme of filmes" class="col-md-3" id="linha">
             <div class="card">
-                <img class="card-img-top" src={{filme.poster}} alt="Card image cap">
+                <img class="card-img-top" src={{filme.poster}} width="200px" height="400px" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">{{filme.titulo}}</h5>
-                    <p class="card-text"><small class="text-muted">{{filme.ano}}, {{filme.genero}}</small></p>
-                    <a href="javascript:void(0);" class="card-link">Detalhes</a>
+                    <span class="lead font-weight-bold">{{filme.titulo}}</span>
+                    <p class="card-text"><span class="lead">{{filme.ano}}, {{filme.tipo}}</span></p>
+                    <a [routerLink]="['/buscar-filmes-detalhados/', filme.id_search]" class="card-link">Detalhes</a>
                 </div>
             </div>
         </div>

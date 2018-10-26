@@ -7,7 +7,7 @@ import { BuscarFilmesDetalhadosComponent } from './buscar-filmes-detalhados/busc
 const routes: Routes = [
   {path: '', component: ListarFilmesComponent},
   {path: 'buscar-filmes-api', component: BuscarFilmesApiComponent},
-  {path: 'buscar-filmes-detalhados', component: BuscarFilmesDetalhadosComponent}
+  {path: 'buscar-filmes-detalhados/:id', component: BuscarFilmesDetalhadosComponent}
 ];
 
 @NgModule({

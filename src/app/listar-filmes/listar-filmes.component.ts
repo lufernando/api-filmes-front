@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FilmesGenericos } from './filmes-genericos';
 import { EventEmitterService } from '../filmes.emitter';
-import { FilmesService } from '../filmes.service';
+import { FilmesGenericos } from '../models.ts/filmes-genericos.model';
+import { FilmesService } from '../service.ts/filmes.service';
 
 @Component({
   selector: 'app-listar-filmes',

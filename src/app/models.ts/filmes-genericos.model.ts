@@ -1,4 +1,4 @@
-import { FilmesDetalhados } from "../buscar-filmes-detalhados/filmes-detalhados";
+import { FilmeDetalhado } from "./filme-detalhado.model";
 
 export class FilmesGenericos {
 
@@ -7,6 +7,6 @@ export class FilmesGenericos {
     public ano?: string;
     public tipo?: string;
     public poster?: string;
-    public Filme?: FilmesDetalhados;
+    public filmeDetalhado?: FilmeDetalhado;
 
 }
